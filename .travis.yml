@@ -15,4 +15,4 @@ jobs:
     - stage: build
       script: make -C hello/ clean all
     - stage: test
-      script: make -c hello/ clean tests
+      script: make -C hello/ clean tests
