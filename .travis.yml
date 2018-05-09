@@ -13,6 +13,6 @@ stages:
 jobs:
   include:
     - stage: build
-      script: make -C lab6/hello clean all
+      script: make -C hello/ clean all
     - stage: test
-      script: lab6/hello/hello
+      script: hello/hello
