@@ -14,7 +14,5 @@ jobs:
   include:
     - stage: build
       script: make -C hello/ clean all
-    - before_script:
-        - make -C hello/ clean all
     - stage: test
       script: hello/hello
